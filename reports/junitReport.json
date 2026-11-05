@@ -1,0 +1,134 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\Pranay\\OneDrive\\Desktop\\playwright\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/demo/demo.spec.js",
+      "--headed"
+    ],
+    "configFile": "C:\\Users\\Pranay\\OneDrive\\Desktop\\playwright\\playwright.config.js",
+    "rootDir": "C:/Users/Pranay/OneDrive/Desktop/playwright/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/Pranay/OneDrive/Desktop/playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/Pranay/OneDrive/Desktop/playwright/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "Reports/junitReport.html"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "Reports/junitReport.xml"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "Reports/junitReport.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "demo\\demo.spec.js",
+      "file": "demo/demo.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "title1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2696,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-04T08:33:30.662Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3bf7453eb9119aa5fcca-873116d3321373e94b33",
+          "file": "demo/demo.spec.js",
+          "line": 2,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "message": "Error: EISDIR: illegal operation on a directory, open 'C:\\Users\\Pranay\\OneDrive\\Desktop\\playwright\\Reports\\junitReport.xml'",
+      "stack": "Error: EISDIR: illegal operation on a directory, open 'C:\\Users\\Pranay\\OneDrive\\Desktop\\playwright\\Reports\\junitReport.xml'"
+    }
+  ],
+  "stats": {
+    "startTime": "2026-11-04T08:33:30.233Z",
+    "duration": 3636.835,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
